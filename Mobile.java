@@ -3,7 +3,7 @@ public class Mobile {
   protected String color;
   protected String size;
   protected String cableType;
-  private String text;
+  private String message;
 
   Mobile() {
     brand = "generic brand x";
@@ -52,11 +52,18 @@ public class Mobile {
     return size;
   }
 
-  // text
-  public void setText(String writtenText) {
-    text = writtenText;
+  // message
+  public void setMessage(String writteMessage) {
+    message = writteMessage;
   }
-  public String getText() {
-    return text;
+  public String getMessage() {
+    return message;
+  }
+
+  public void sendMsg(String msg) {
+    System.out.println("msg: "+msg);
+  }
+  public void sendMsg(String msg, String person) {
+    System.out.println("msg: "+msg+" to: " + person);
   }
 }
