@@ -1,21 +1,21 @@
 class Main {
   public static void main(String [] args) {
     Separator line = new Separator();
+
+    Mobile genericMobile = new Mobile();
     IOSmobile iphone = new IOSmobile();
-    IOSmobile iphone2 = new IOSmobile();
     ANDROIDmobile xiaomi = new ANDROIDmobile();
 
-    System.out.println("iphone 1");
+    System.out.println("iphone");
     iphone.setSize("5,4");
     iphone.setColor("red");
     System.out.println(iphone.brand+"\r\n"+iphone.getSize()+"\r\n"+ iphone.getColor()+"\r\n"+ iphone.getCableType());
 
     line.printSeparatorLine();
 
-    System.out.println("iphone 2");
-    iphone2.setSize("6,4");
-    iphone2.setColor("white");
-    System.out.println(iphone.brand+"\r\n"+iphone2.getSize()+"\r\n"+ iphone2.getColor()+"\r\n"+ iphone2.getCableType());
+    System.out.println("generic phone");
+
+    System.out.println(genericMobile.brand+"\r\n"+genericMobile.getSize()+"\r\n"+ genericMobile.getColor()+"\r\n"+ genericMobile.getCableType());
 
     line.printSeparatorLine();
 
@@ -61,5 +61,8 @@ class Main {
       }
       line.printSeparatorLine();
     }
+    iphone.turnOff();
+    genericMobile.turnOff();
+    xiaomi.turnOff();
   }
 }
