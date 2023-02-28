@@ -60,6 +60,7 @@ public class Mobile {
     return message;
   }
 
+  //send message
   public void sendMsg(String msg) {
     System.out.println("msg: "+msg);
   }
