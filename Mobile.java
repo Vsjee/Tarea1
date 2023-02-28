@@ -13,11 +13,11 @@ public class Mobile {
   }
 
   public void turnOn() {
-    System.out.println("you have turned on your "+brand+" mobile");
+    System.out.println("you have turned on your generic mobile");
   }
 
   public void turnOff() {
-    System.out.println("you have turned off your "+brand+" mobile");
+    System.out.println("you have turned off your generic mobile");
   }
 
   // brand
